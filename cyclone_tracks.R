@@ -25,19 +25,24 @@ library(hurricaneexposuredata)
 library(hurricaneexposure)
 
 # -------------
-data('hurr_tracks')
-ht <- hurr_tracks
-# hurricaneexposuredata::
+# deprecated for storms in years 2019 and beyond
+  # data('hurr_tracks')
+  # ht <- hurr_tracks
+  # hurricaneexposuredata::
 #
-# if (requireNamespace("hurricaneexposuredata", quietly = TRUE)) {
-#
-#   map_tracks(storms = "Sandy-2012")
-#   map_tracks(storms = "Floyd-1999", plot_points = TRUE)
-#   map_tracks(storms = c("Sandy-2012", "Floyd-1999"))
-#   a <- map_tracks(storms = "Sandy-2012", color = "blue", alpha = 0.3)
-#   b <- map_tracks(storms = "Floyd-1999", plot_object = a)
-#   b
-# }
+  # if (requireNamespace("hurricaneexposuredata", quietly = TRUE)) {
+  #
+  #   map_tracks(storms = "Sandy-2012")
+  #   map_tracks(storms = "Floyd-1999", plot_points = TRUE)
+  #   map_tracks(storms = c("Sandy-2012", "Floyd-1999"))
+  #   a <- map_tracks(storms = "Sandy-2012", color = "blue", alpha = 0.3)
+  #   b <- map_tracks(storms = "Floyd-1999", plot_object = a)
+  #   b
+  # }
+
+
+
+#PLOT track -------
 track = map_tracks(storms = 'Harvey-2017', plot_points = TRUE)
 harvey_tracks = hurr_tracks %>% filter(storm_id == 'Harvey-2017')
 racks(storms = "Harvey-2017", plot_points = TRUE)
