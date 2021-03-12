@@ -40,7 +40,7 @@ library(hurricaneexposure)
   #   b
   # }
 
-d <- download_storm_data(2019, file_type = "details")
+d <- download_storm_data("2019", file_type = "details")
 
 #PLOT track -------
 track = map_tracks(storms = 'Harvey-2017', plot_points = TRUE)
